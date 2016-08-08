@@ -3,11 +3,8 @@ var mongoose = require('mongoose'),
 
 var Nps = Schema({
     company: {type: String, required: true},
-    date: {type: Date, default: Date.now},
-    survey: [{
-        question: {type: String},
-        answer: {}
-    }]
+    questions: [{type: String, required: true}],
+    answers: [{}]
 })
 
 module.exports = mongoose.model('Nps', Nps);
