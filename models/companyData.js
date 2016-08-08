@@ -4,7 +4,7 @@ var mongoose = require('mongoose'),
 var Company = Schema({
     name: {type: String, required: true},
     data: [{
-        npsData: [{ type: Schema.Types.ObjectId, ref: 'Nps'}],
+        npsData: { type: Schema.Types.ObjectId, ref: 'Nps'},
         date: {type: Date, default: new Date()}
     }]
 })
