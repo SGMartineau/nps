@@ -12,8 +12,10 @@ app.use(cors());
 //app.use(express.static(__dirname + '/public'));
 
 app.post('/api/npsData', dbController.addNps);
+app.post('/api/npsCompany', dbController.addCompany);
 
 app.get('/api/npsData', dbController.getNps);
+app.get('/api/npsCompany', dbController.getCompany);
 
 app.listen(port, function () {
     console.log('listening on port ' + port);

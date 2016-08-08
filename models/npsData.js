@@ -2,7 +2,7 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 var Nps = Schema({
-    npsData: [[]];
+    npsData: [[]]
 })
 
 module.exports = mongoose.model('Nps', Nps);
