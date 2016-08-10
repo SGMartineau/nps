@@ -9,7 +9,7 @@ var express = require('express'),
 
 app.use(bodyParser.json());
 app.use(cors());
-//app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'));
 
 app.post('/api/npsData', dbController.addNps);
 app.post('/api/npsCompany', dbController.addCompany);

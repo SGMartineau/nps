@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="npsWise">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,13 @@
 
 <body>
 
+   
+    <ui-view></ui-view>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
     <script src="app.js"></script>
+    <script src="dashboard/dashboardCtrl.js"></script>
+    <script src="dashboard/dashboardService.js"></script>
 </body>
 </html>
