@@ -13,10 +13,12 @@ angular.module('npsWise').service('dashboardService', function ($q, $http) {
                 seven: 0,
                 eight: 0,
                 nine: 0,
-                ten: 0
+                ten: 0,
+                responses: 0
             };
             response.data.forEach(function(set) {
                 for (var i = 1; i < set.npsData.length; i++) {
+                    npsNumbers.responses++;
                     for (var j = 0; j < set.npsData[i].length; j++) {
                         if (set.npsData[i][j] === 1) {
                             npsNumbers.one++;

@@ -1,0 +1,95 @@
+.total {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.bad {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.okay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.good {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.none {
+    opacity: .4;
+    height: 4px;
+    width: 7vw;
+    margin: .5px;
+    position: relative;
+    bottom: 4px;
+}
+
+.bar {
+    width: 7vw;
+    margin: .5px;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.green {
+    background-color: #4caf50;
+}
+
+.yellow {
+    background-color: #ff9800;
+}
+
+.average {
+    margin-bottom: 17px;
+}
+
+.average p:first-child {
+    width: 35px;
+	height: 64px;
+	font-family: ProximaNova-Semibold;
+	font-size: 64px;
+	line-height: 1;
+	color: #2095f2;
+    margin: 0 0 0 3px;
+}
+
+.average p:nth-child(2) {
+    width: 27px;
+	height: 14px;
+	font-family: ProximaNova-Regular;
+	font-size: 14px;
+	line-height: 1;
+	color: #546e7a;
+    margin: 0 0 0 3px;
+}
+
+.average p:last-child {
+    width: 100px;
+	height: 14px;
+	font-family: ProximaNova-Regular;
+	font-size: 14px;
+	line-height: 1;
+	color: #546e7a;
+    margin: 1px 0 0 3px;
+}
+
+
+.percent {
+    width: 30px;
+	height: 17px;
+	font-family: ProximaNova-Semibold;
+	font-size: 17px;
+	line-height: 1;
+	color: #455a64;
+    margin: 0 auto;
+}
